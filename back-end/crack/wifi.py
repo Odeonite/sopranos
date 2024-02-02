@@ -72,4 +72,6 @@ for i in data:
             # except subprocess.CalledProcessError:
             #     print('Encoding Error Occured')
 
+
+# code inspitation from "pythonadvisor" on Instagram
     

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('f1glass.jpg') no repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+.login-box{
+    position:relative;
+    width: 400px;
+    height: 400px;
+    background: transparent url('f1glass.jpg') no-repeat;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+}
+
+h2{
+    font-size: 2em;
+    /* font-weight: 600; */
+    color: #fff;
+    /* margin-bottom: 20px; */
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 300px;
+    /* height: 40px; */
+    margin: 300px 0;
+    border-bottom: 1px solid #fff;
+}
+
+input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {top:-5px};
+
+.input-box input{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: transparent url(f1glass.jpg);
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    color: #fff;
+    transform: translateY(-50%);
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -15px 0 15px;
+    color: #fff;
+}
+
+.remember-forgot label input{margin-right: 3px;}
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a :hover {
+    text-decoration: underline;
+}
+
+button{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    /* outline: none; */
+    border-radius: 40px;
+    font-size: 1em;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.register-link {
+    font-size:.9em;
+    color:#fff;
+    text-align:center;
+    margin:25px 0 10px;
+  }
+
+  .register-link p a {
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+  }
+
+  .register-link p a:hover {
+    text-decoration:underline;
+  }
+
+  @media (max-width:500px) {
+    .login-box {
+      width:100%;
+      height:100vh;
+      border:none;
+      border-radius:0;
+    }
+
+    .input-box {
+      width:290px;
+    }
+
+  }
